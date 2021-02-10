@@ -8,14 +8,14 @@ Created on Sat Feb  6 23:54:12 2021
 import numpy as np
 import random
 
-random.seed(99)
-np.random.seed(99)
+random.seed(111)
+np.random.seed(111)
 
 class MC_gen():
     def __init__(self):
         self.N = 10 # Possible state
         self.possible_trans_rate = 0.3 # Rate of element in TP being nonzero        
-        self.data_count = 500 # Total of sequence generated
+        self.data_count = 10000 # Total of sequence generated
         self.maxlen = 20 # Maximum length of each sequence
         self.init_state = [0, 3] # Initial state
         self.terminal_state = [1] # End state
